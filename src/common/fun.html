@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="icon" href="/nerp_devp/css/newtouch/images/favicon.ico" />
+<link rel="shortcut icon"
+	href="/nerp_devp/css/newtouch/images/favicon.ico" />
+<meta http-equiv="Content-Type"
+	content="application/html; charset=utf-8" />
+<link href="/nerp_devp/css/print.css" rel="stylesheet" type="text/css"
+	media="print" />
+<link href="/nerp_devp/css/newtouch/default.css" rel="stylesheet"
+	type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css"
+	href="/nerp_devp/css/style-base.css" />
+<link rel="stylesheet" type="text/css"
+	href="/nerp_devp/css/content-style.css" />
+<link rel="stylesheet" type="text/css"
+	href="/nerp_devp/component/jquery.mCustomScrollbar.css" />
+<script type="text/javascript" src="/nerp_devp/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="/nerp_devp/js/index.js"></script>
+<script type="text/javascript"
+	src="/nerp_devp/javascripts/MiscFunctions.js"></script>
+<title>选择客户</title>
+</head>
+<body style="background: #f8fbff;">
+	<div id="common_header_box">
+		<div id="common_header">
+			<div class="top_left fleft">
+				<div class="us_logo"></div>
+				<h2>新致软件ERP平台</h2>
+			</div>
+			<div class="top_menu fright">
+				<ul>
+					<li><i class="icon icon_menus"></i><a
+						href="/nerp_devp/index.php"><span>主菜单</span></a></li>
+					<li><i class="icon icon_kehu"></i><a
+						href="/nerp_devp/SelectCustomer.php"><span>客户</span></a></li>
+					<li><i class="icon icon_good"></i><a
+						href="/nerp_devp/open_page.php?page=SelectProduct"><span>商品</span></a>
+					</li>
+					<li><i class="icon icon_gys"></i><a
+						href="/nerp_devp/open_page.php?page=SelectSupplier"><span>供应商</span></a>
+					</li>
+					<li><i class="icon icon_help"></i><a target="_blank"
+						href="/nerp_devp/locale/zh_CN.utf8/Manual/ManualContents.php?ViewTopic=AccountsReceivable#SelectCustomer"><span>帮助</span></a>
+					</li>
+					<li><i class="icon icon_lgout"></i><a
+						href="/nerp_devp/Logout.php"
+						onclick="return confirm('确实要退出系统么？');"><span>退出</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="common_main">
+		<div id="left_menu_body">
+			<div class="layout_button" id="layout_button"></div>
+			<div class="left_body">
+				<div class="left_menu">
+					<ul>
+						<li class="selected"><a
+							href="/nerp_devp/SelectCustomer.php?Application=orders"><i
+								class="icon icon_xs_hv" iType="xs"></i> <span>销售</span></a></li>
+						<li><a href="/nerp_devp/SelectCustomer.php?Application=AR"><i
+								class="icon icon_ys" iType="ys"></i> <span>应收</span></a></li>
+						<li><a href="/nerp_devp/SelectCustomer.php?Application=PO"><i
+								class="icon icon_cg" iType="cg"></i> <span>采购</span></a></li>
+						<li><a href="/nerp_devp/SelectCustomer.php?Application=AP"><i
+								class="icon icon_yf" iType="yf"></i> <span>应付</span></a></li>
+						<li><a href="/nerp_devp/SelectCustomer.php?Application=stock"><i
+								class="icon icon_kc" iType="kc"></i> <span>库存</span></a></li>
+						<li><a href="/nerp_devp/SelectCustomer.php?Application=manuf"><i
+								class="icon icon_sc" iType="sc"></i> <span>生产</span></a></li>
+						<li><a href="/nerp_devp/SelectCustomer.php?Application=GL"><i
+								class="icon icon_zz" iType="zz"></i> <span>总账</span></a></li>
+						<li><a href="/nerp_devp/SelectCustomer.php?Application=FA"><i
+								class="icon icon_zcjl" iType="zcjl"></i> <span>资产经理</span></a></li>
+						<li><a href="/nerp_devp/SelectCustomer.php?Application=PC"><i
+								class="icon icon_xexj" iType="xexj"></i> <span>小额现金</span></a></li>
+						<li><a
+							href="/nerp_devp/SelectCustomer.php?Application=system"><i
+								class="icon icon_set" iType="set"></i> <span>设置</span></a></li>
+						<li><a
+							href="/nerp_devp/SelectCustomer.php?Application=Utilities"><i
+								class="icon icon_gjx" iType="gjx"></i> <span>工具箱</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="right_body">
+			<div id="right_navigate">
+				<ul class="fleft">
+					<li>主菜单</li>
+					<li>&gt;</li>
+					<li>销售</li>
+				</ul>
+				<ul class="fright">
+					<li>管理员</li>
+					<li>|</li>
+					<li>2016-12-30</li>
+				</ul>
+			</div>
+			<div id="right_content">
+				<div id="right_layout">
+					<p class="page_title_text">
+						<img alt="" src="/nerp_devp/css/newtouch/images/customer.png"
+							title="客户" /> 客户
+					</p>
+					<table cellpadding="4" width="90%" class="selection">
+						<thead>
+							<tr>
+								<th style="width: 33%">客户交易查询</th>
+								<th style="width: 33%">客户交易</th>
+								<th style="width: 33%">客户</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="select"></td>
+								<td class="select"></td>
+								<td class="select"><a href="/nerp_devp/Customers.php">新建客户</a><br /></td>
+							</tr>
+							<tbody>
+					</table>
+					<form action="/nerp_devp/SelectCustomer.php" method="post">
+						<input type="hidden" name="FormID"
+							value="f3440557168cfa3cad5635c80c6af23a26a0bfb9" />
+						<p class="page_title_text">
+							<img alt="" src="/nerp_devp/css/newtouch/images/magnifier.png"
+								title="查找" /> 查找客户
+						</p>
+						<table cellpadding="3" class="selection">
+							<tr>
+								<td colspan="2">输入部分名称:</td>
+								<td><input type="text" maxlength="25" name="Keywords"
+									title="If there is an entry in this field then customers with the text entered in their name will be returned"
+									size="20" /></td>
+								<td><b>或</b></td>
+								<td>输入部分代码:</td>
+								<td><input maxlength="18" name="CustCode" pattern="[\w-]*"
+									size="15" type="text"
+									title="If there is an entry in this field then customers with the text entered in their customer code will be returned" /></td>
+							</tr>
+							<tr>
+								<td><b>或</b></td>
+								<td>输入部分电话号码:</td>
+								<td><input maxlength="18" name="CustPhone"
+									pattern="[0-9\-\s()+]*" size="15" type="tel" /></td>
+								<td><b>或</b></td>
+								<td>输入部分地址:</td>
+								<td><input maxlength="25" name="CustAdd" size="20"
+									type="text" /></td>
+							</tr>
+							<tr>
+								<td><b>或</b></td>
+								<td>选择一个种类:</td>
+								<td><select name="CustType">
+										<option value="ALL">任意</option>
+										<option value="中小企业">中小企业</option>
+										<option value="外资企业">外资企业</option>
+										<option value="大型国企">大型国企</option>
+										<option value="政府机构">政府机构</option>
+										<option value="渠道分销">渠道分销</option>
+								</select></td>
+								<td><b>或</b></td>
+								<td>选择区域:</td>
+								<td><select name="Area"><option value="ALL">任意</option>
+										<option value="A">华东</option>
+										<option value="B">华北</option>
+										<option value="C">华南</option>
+										<option value="D">西部</option></select></td>
+							</tr>
+						</table>
+						<br />
+						<div class="centre">
+							<input name="Search" type="submit" value="查找" /> <input
+								name="CSV" type="submit" value="CSV格式" />
+						</div>
+					</form>
+					<!-- 主框架公用页脚 -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="common_footer">© 2014-2017 Newtouch.com
+		ICP证：沪ICP备10012409号-1</div>
+</body>
+<script>
+	window.onload = function()
+	{
+		liuxiaofan();
+	};
+
+	window.onresize = function()
+	{
+		liuxiaofan();
+	};
+</script>
+</html>

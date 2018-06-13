@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="css/style-base.css" />
+<link rel="stylesheet" href="css/content-style.css" />
+<link rel="stylesheet" href="component/jquery.mCustomScrollbar.css" />
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+</head>
+<body style="background: #f8fbff; overflow: hidden;"
+	onload="liuxiaofan()">
+	<div class="us_header_box">
+		<div class="us_header">
+			<div class="top_left fleft">
+				<div class="us_logo"></div>
+				<h2>新致软件ERP平台</h2>
+			</div>
+			<div class="top_menu fright">
+				<ul>
+					<li><i class="icon icon_menus"></i> <span>主菜单</span></li>
+					<li><i class="icon icon_kehu"></i> <span>客户</span></li>
+					<li><i class="icon icon_good"></i> <span>商品</span></li>
+					<li><i class="icon icon_gys"></i> <span>供应商</span></li>
+					<li><i class="icon icon_help"></i> <span>帮助</span></li>
+					<li><i class="icon icon_lgout"></i> <span>退出</span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="us_main">
+		<div class="us_left">
+			<div class="layout_button" id="layout_button"></div>
+			<div class="left_body">
+				<div class="left_menu">
+					<ul>
+						<li>
+							<!--<i class="icon icon_xs" iType="xs"></i>--> <a
+							href="http://www.baidu.com"><span>销售</span></a>
+						</li>
+						<li>
+							<!--                       <i class="icon icon_ys" iType="ys"></i>-->
+							<a href="http://www.sina.com"><span>应收</span></a>
+						</li>
+						<li><i class="icon icon_cg" iType="cg"></i> <span>采购</span></li>
+						<li><i class="icon icon_yf" iType="yf"></i> <span>应付</span></li>
+						<li><i class="icon icon_kc" iType="kc"></i> <span>库存</span></li>
+						<li><i class="icon icon_sc" iType="sc"></i> <span>生产</span></li>
+						<li><i class="icon icon_zz" iType="zz"></i> <span>总账</span></li>
+						<li class="selected"><i class="icon icon_zcjl" iType="zcjl"></i>
+							<span>资产经理</span></li>
+						<li><i class="icon icon_xexj" iType="xexj"></i> <span>小额现金</span>
+						</li>
+						<li><i class="icon icon_set" iType="set"></i> <span>设置</span>
+						</li>
+						<li><i class="icon icon_gjx" iType="gjx"></i> <span>工具箱</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="us_right">
+			<div class="breadcrumbs">
+				<div class="fleft">资产经理</div>
+				<ul class="fright">
+					<li><a href="">首页</a></li>
+					<li><a href="">&gt;</a></li>
+					<li><a href="">资产经理</a></li>
+				</ul>
+			</div>
+			<div class="layout_content" id="mainBox">
+				<div class="lay_body">
+					<ul id="layout_box">
+						<li>
+							<dl class="item">
+								<dt class="li_b">交易</dt>
+								<dd>
+									<a href="">增加新资产</a>
+								</dd>
+								<dd>
+									<a href="">选择资产</a>
+								</dd>
+								<dd>
+									<a href="">变更资产地点</a>
+								</dd>
+								<dd>
+									<a href="">折旧日记账</a>
+								</dd>
+								<dd>
+									<a href="">折旧日记账</a>
+								</dd>
+							</dl>
+						</li>
+						<li style="">
+							<dl class="item">
+								<dt class="li_g">查询及报告</dt>
+								<dd>
+									<a href="">查询登记簿</a>
+								</dd>
+								<dd>
+									<a href="">我的维护计划</a>
+								</dd>
+								<dd>
+									<a href="">维护提醒邮件</a>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="item">
+								<dt class="li_o">维护</dt>
+								<dd>
+									<a href="">固定资产种类维护</a>
+								</dd>
+								<dd>
+									<a href="">增加或者维护资产地点</a>
+								</dd>
+								<dd>
+									<a href="">固定资产维护任务</a>
+								</dd>
+							</dl>
+						</li>
+						<li style="">
+							<dl class="item">
+								<dt class="li_p">查询及报告</dt>
+								<dd>
+									<a href="">查询登记簿</a>
+								</dd>
+								<dd>
+									<a href="">我的维护计划</a>
+								</dd>
+								<dd>
+									<a href="">维护提醒邮件</a>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="item">
+								<dt class="li_lb">维护</dt>
+								<dd>
+									<a href="">固定资产种类维护</a>
+								</dd>
+								<dd>
+									<a href="">增加或者维护资产地点</a>
+								</dd>
+								<dd>
+									<a href="">固定资产维护任务</a>
+								</dd>
+							</dl>
+						</li>
+						<li style="">
+							<dl class="item">
+								<dt class="li_r">查询及报告</dt>
+								<dd>
+									<a href="">查询登记簿</a>
+								</dd>
+								<dd>
+									<a href="">我的维护计划</a>
+								</dd>
+								<dd>
+									<a href="">维护提醒邮件</a>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="item">
+								<dt class="li_b">维护</dt>
+								<dd>
+									<a href="">固定资产种类维护</a>
+								</dd>
+								<dd>
+									<a href="">增加或者维护资产地点</a>
+								</dd>
+								<dd>
+									<a href="">固定资产维护任务</a>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="item">
+								<dt class="li_g">系统标准报表</dt>
+								<dd></dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="item">
+								<dt class="li_lb">用户自定义报表</dt>
+								<dd></dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="item">
+								<dt class="li_o">其他</dt>
+								<dd></dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="right_footer">© 2014-2017 Newtouch.com
+			ICP证：沪ICP备10012409号-1</div>
+	</div>
+
+	<script type="text/javascript">
+		/*
+		 原理：1.把所有的li的高度值放到数组里面
+		 2.第一行的top都为0
+		 3.计算高度值最小的值是哪个li
+		 4.把接下来的li放到那个li的下面
+		 */
+		var margin = 20;//这里设置间距
+		var li = $("#layout_box li");//这里是区块名称
+		var w = ($(".lay_body")[0].offsetWidth - 80) / 3;
+		li.css('width', w + 'px');
+		var li_W = li[0].offsetWidth + margin;//取区块的实际宽度（包含间距，这里使用源生的offsetWidth函数，不适用jQuery的width()函数是因为它不能取得实际宽度，例如元素内有pandding就不行了）
+		//alert($(".lay_body")[0].offsetWidth);
+		//alert($(".layout_content")[0].offsetWidth);
+
+		function liuxiaofan()
+		{//定义成函数便于调用
+			var li = $("#layout_box li");//这里是区块名称
+			var w = ($(".lay_body")[0].offsetWidth - 80) / 3;
+			if (w <= 200)
+			{
+				w = 200;
+			}
+			li.css('width', w + 'px');
+
+			//    var	li_W = li[0].offsetWidth+margin;//取区块的实际宽度（包含间距，这里使用源生的offsetWidth函数，不适用jQuery的width()函数是因为它不能取
+			var li_W = w + margin;//取区块的实际宽度（包含间距，这里使用源生的offsetWidth函数，不适用jQuery的width()函数是因为它不能取
+
+			var h = [];//记录区块高度的数组
+			var n = $(".lay_body")[0].offsetWidth / li_W | 0;//窗口的宽度除以区块宽度就是一行能放几个区块
+			//        var n = 3;
+
+			for (var i = 0; i < li.length; i++)
+			{//有多少个li就循环多少次
+				li_H = li[i].offsetHeight;//获取每个li的高度
+				if (i < n)
+				{//n是一行最多的li，所以小于n就是第一行了
+					h[i] = li_H;//把每个li放到数组里面
+					li.eq(i).css("top", 0);//第一行的Li的top值为0
+					li.eq(i).css("left", i * li_W);//第i个li的左坐标就是i*li的宽度
+				}
+				else
+				{
+					min_H = Math.min.apply(null, h);//取得数组中的最小值，区块中高度值最小的那个
+					minKey = getarraykey(h, min_H);//最小的值对应的指针
+					h[minKey] += li_H + margin;//加上新高度后更新高度值
+					li.eq(i).css("top", min_H + margin);//先得到高度最小的Li，然后把接下来的li放到它的下面
+					li.eq(i).css("left", minKey * li_W); //第i个li的左坐标就是i*li的宽度
+				}
+				//$("h3").eq(i).text("编号："+i+"，高度："+li_H);//把区块的序号和它的高度值写入对应的区块H3标题里面
+			}
+		}
+		/* 使用for in运算返回数组中某一值的对应项数(比如算出最小的高度值是数组里面的第几个) */
+		function getarraykey(s, v)
+		{
+			for (k in s)
+			{
+				if (s[k] == v)
+				{
+					return k;
+				}
+			}
+		}
+		/*这里一定要用onload，因为图片不加载完就不知道高度值*/
+		window.onload = function()
+		{
+			liuxiaofan();
+		};
+		/*浏览器窗口改变时也运行函数*/
+		window.onresize = function()
+		{
+			//window.location.reload();
+			liuxiaofan();
+		};
+	</script>
+	<script type="text/javascript">
+		$(function()
+		{
+			var psList = $(".left_menu ul > li");
+			psList.click(function()
+			{
+				var itype = $(this).find("i").attr("iType");
+				var iWhite = "icon_" + itype + "_hv";
+				//全部移除高亮
+				$(this).siblings().removeClass("selected").find("i").removeClass(function()
+				{
+					var itype = $(this).attr("iType");
+					var iWhite = "icon_" + itype + "_hv";
+					return iWhite;
+				});
+				//当前添加高亮
+				$(this).find("i").addClass(iWhite);
+				$(this).addClass("selected");
+
+				return false;
+			});
+
+			//top_menu
+			$(".top_menu ul li").click(function()
+			{
+				$(this).addClass("active").siblings().removeClass("active");
+			});
+
+			//左侧菜单
+			$(document).ready(function()
+			{
+				$("#layout_button").toggle(function()
+				{
+					$(this).parents(".us_left").animate(
+					{
+						left : '-201px'
+					}, 'fast');
+					$(this).animate(
+					{
+						right : '-10px'
+					}, "fast").addClass("layout_button_fiexd");
+					$(".us_right").animate(
+					{
+						marginLeft : '0px'
+					}, "fast");
+				}, function()
+				{
+					$(this).parents(".us_left").animate(
+					{
+						left : '0px'
+					}, "fast");
+					$(this).animate(
+					{
+						right : '-10px'
+					}, "fast").removeClass("layout_button_fiexd");
+					$(".us_right").animate(
+					{
+						marginLeft : '201px'
+					}, "fast");
+				});
+			});
+
+		});
+	</script>
+
+
+</body>
+</html>

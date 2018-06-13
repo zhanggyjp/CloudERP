@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="icon" href="/nerp_devp/css/newtouch/images/favicon.ico" />
+<link rel="shortcut icon"
+	href="/nerp_devp/css/newtouch/images/favicon.ico" />
+<meta http-equiv="Content-Type"
+	content="application/html; charset=utf-8" />
+<link href="/nerp_devp/css/print.css" rel="stylesheet" type="text/css"
+	media="print" />
+<link href="/nerp_devp/css/newtouch/default.css" rel="stylesheet"
+	type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css"
+	href="/nerp_devp/css/style-base.css" />
+<link rel="stylesheet" type="text/css"
+	href="/nerp_devp/css/content-style.css" />
+<link rel="stylesheet" type="text/css"
+	href="/nerp_devp/component/jquery.mCustomScrollbar.css" />
+<script type="text/javascript" src="/nerp_devp/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="/nerp_devp/js/index.js"></script>
+<script type="text/javascript"
+	src="/nerp_devp/javascripts/MiscFunctions.js"></script>
+<title>主菜单</title>
+</head>
+<body style="background: #f8fbff;">
+	<div id="common_header_box">
+		<div id="common_header">
+			<div class="top_left fleft">
+				<div class="us_logo"></div>
+				<h2>新致软件ERP平台</h2>
+			</div>
+			<div class="top_menu fright">
+				<ul>
+					<li><i class="icon icon_menus"></i><a
+						href="/nerp_devp/index.php"><span>主菜单</span></a></li>
+					<li><i class="icon icon_kehu"></i><a
+						href="/nerp_devp/SelectCustomer.php"><span>客户</span></a></li>
+					<li><i class="icon icon_good"></i><a
+						href="/nerp_devp/open_page.php?page=SelectProduct"><span>商品</span></a>
+					</li>
+					<li><i class="icon icon_gys"></i><a
+						href="/nerp_devp/open_page.php?page=SelectSupplier"><span>供应商</span></a>
+					</li>
+					<li><i class="icon icon_help"></i><a target="_blank"
+						href="/nerp_devp/locale/zh_CN.utf8/Manual/ManualContents.php"><span>帮助</span></a>
+					</li>
+					<li><i class="icon icon_lgout"></i><a
+						href="/nerp_devp/Logout.php"
+						onclick="return confirm('确实要退出系统么？');"><span>退出</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="common_main">
+		<div id="left_menu_body">
+			<div class="layout_button" id="layout_button"></div>
+			<div class="left_body">
+				<div class="left_menu">
+					<ul>
+						<li class="selected"><a
+							href="/nerp_devp/index.php?Application=orders"><i
+								class="icon icon_xs_hv" iType="xs"></i> <span>销售</span></a></li>
+						<li><a href="/nerp_devp/index.php?Application=AR"><i
+								class="icon icon_ys" iType="ys"></i> <span>应收</span></a></li>
+						<li><a href="/nerp_devp/index.php?Application=PO"><i
+								class="icon icon_cg" iType="cg"></i> <span>采购</span></a></li>
+						<li><a href="/nerp_devp/index.php?Application=AP"><i
+								class="icon icon_yf" iType="yf"></i> <span>应付</span></a></li>
+						<li><a href="/nerp_devp/index.php?Application=stock"><i
+								class="icon icon_kc" iType="kc"></i> <span>库存</span></a></li>
+						<li><a href="/nerp_devp/index.php?Application=manuf"><i
+								class="icon icon_sc" iType="sc"></i> <span>生产</span></a></li>
+						<li><a href="/nerp_devp/index.php?Application=GL"><i
+								class="icon icon_zz" iType="zz"></i> <span>总账</span></a></li>
+						<li><a href="/nerp_devp/index.php?Application=FA"><i
+								class="icon icon_zcjl" iType="zcjl"></i> <span>资产经理</span></a></li>
+						<li><a href="/nerp_devp/index.php?Application=PC"><i
+								class="icon icon_xexj" iType="xexj"></i> <span>小额现金</span></a></li>
+						<li><a href="/nerp_devp/index.php?Application=system"><i
+								class="icon icon_set" iType="set"></i> <span>设置</span></a></li>
+						<li><a href="/nerp_devp/index.php?Application=Utilities"><i
+								class="icon icon_gjx" iType="gjx"></i> <span>工具箱</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="right_body">
+			<div id="right_navigate">
+				<ul class="fleft">
+					<li>主菜单</li>
+					<li>&gt;</li>
+					<li>销售</li>
+				</ul>
+				<ul class="fright">
+					<li>管理员</li>
+					<li>|</li>
+					<li>2016-12-30</li>
+				</ul>
+			</div>
+			<div id="right_content">
+				<div id="right_layout">
+					<div id="right_body">
+						<ul id="layout_box">
+							<li>
+								<dl class="item">
+									<dt class="li_b">交易</dt>
+									<dd>
+										<a
+											href="/nerp_devp/open_page.php?page=SelectOrderItems?NewOrder=Yes">新建订单或报价单</a>
+									</dd>
+									<dd>
+										<a href="/nerp_devp/open_page.php?page=CounterSales">输入柜台销售</a>
+									</dd>
+									<dd>
+										<a href="/nerp_devp/open_page.php?page=CounterReturns">输入柜台
+										</a>
+									</dd>
+									<dd>
+										<a href="/nerp_devp/open_page.php?page=PDFPickingList">打印装箱单</a>
+									</dd>
+									<dd>
+										<a href="/nerp_devp/open_page.php?page=SelectSalesOrder">处理未完成销售订单/报价</a>
+									</dd>
+									<dd>
+										<a href="/nerp_devp/open_page.php?page=SpecialOrder">特殊订单</a>
+									</dd>
+									<dd>
+										<a
+											href="/nerp_devp/open_page.php?page=SelectRecurringSalesOrder">修改循环销售订单</a>
+									</dd>
+									<dd>
+										<a
+											href="/nerp_devp/open_page.php?page=RecurringSalesOrdersProcess">执行循环销售订单</a>
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl class="item">
+									<dt class="li_g">查询及报告</dt>
+									<dd>
+										<a href="/nerp_devp/open_page.php?page=SelectCompletedOrder">销售订单查询</a>
+									</dd>
+									<dd>
+										<a href="/nerp_devp/open_page.php?page=PDFPriceList">打印价格表</a>
+									</dd>
+									<dd>
+										<a href="/nerp_devp/open_page.php?page=PDFOrderStatus">订单执行状况报表</a>
+									</dd>
+									<dd>
+										<a href="/nerp_devp/open_page.php?page=PDFOrdersInvoiced">打印已开发票销售订单</a>
+									</dd>
+									<dd>
+										<a href="/nerp_devp/open_page.php?page=DailySalesInquiry">销售日报查询</a>
+									</dd>
+									<dd>
+										<a
+											href="/nerp_devp/open_page.php?page=SalesByTypePeriodInquiry">销售日报查询
+										</a>
+									</dd>
+									<dd>
+										<a
+											href="/nerp_devp/open_page.php?page=SalesCategoryPeriodInquiry">销售种类查询</a>
+									</dd>
+									<dd>
+										<a
+											href="/nerp_devp/open_page.php?page=StockCategorySalesInquiry">Sales
+											By Category By Item Inquiry</a>
+									</dd>
+									<dd>
+										<a href="/nerp_devp/open_page.php?page=SalesAnalRepts">销售分析</a>
+									</dd>
+									<dd>
+										<a href="/nerp_devp/open_page.php?page=SalesGraph">销售报告图</a>
+									</dd>
+									<dd>
+										<a href="/nerp_devp/open_page.php?page=SalesTopItemsInquiry">销售员排行查询</a>
+									</dd>
+									<dd>
+										<a href="/nerp_devp/open_page.php?page=PDFDeliveryDifferences">订单交货差异报告</a>
+									</dd>
+									<dd>
+										<a href="/nerp_devp/open_page.php?page=PDFDIFOT">按期足量交货报表</a>
+									</dd>
+									<dd>
+										<a href="/nerp_devp/open_page.php?page=SalesInquiry">销售订单细节或者总结查询</a>
+									</dd>
+									<dd>
+										<a href="/nerp_devp/open_page.php?page=TopItems">热销商品查询</a>
+									</dd>
+									<dd>
+										<a
+											href="/nerp_devp/open_page.php?page=SalesTopCustomersInquiry">顶级客户查询</a>
+									</dd>
+									<dd>
+										<a href="/nerp_devp/open_page.php?page=NoSalesItems">最差销售商品报告</a>
+									</dd>
+									<dd>
+										<a href="/nerp_devp/open_page.php?page=PDFLowGP">低利润率销售报告</a>
+									</dd>
+									<dd>
+										<a
+											href="/nerp_devp/open_page.php?page=PDFSellThroughSupportClaim">Sell
+											Through支持请款单</a>
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl class="item">
+									<dt class="li_o">维护</dt>
+									<dd>
+										<a href="/nerp_devp/open_page.php?page=Contracts">创建合同</a>
+									</dd>
+									<dd>
+										<a href="/nerp_devp/open_page.php?page=SelectContract">选择合同</a>
+									</dd>
+									<dd>
+										<a href="/nerp_devp/open_page.php?page=SellThroughSupport">Sell
+											Through 支持交易</a>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+						<!-- 主框架公用页脚 -->
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="common_footer">© 2014-2017 Newtouch.com
+			ICP证：沪ICP备10012409号-1</div>
+</body>
+<script>
+	window.onload = function()
+	{
+		liuxiaofan();
+	};
+
+	window.onresize = function()
+	{
+		liuxiaofan();
+	};
+</script>
+</html>
